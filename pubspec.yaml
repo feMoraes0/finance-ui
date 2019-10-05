@@ -46,11 +46,11 @@ flutter:
   #  - images/a_dot_ham.jpeg
   assets:
     - assets/Icon001.png
-    - assets/Icon002.jpg
-    - assets/Icon003.jpg
-    - assets/Icon004.jpg
-    - assets/Icon005.jpg
-    - assets/Icon006.jpg
+    - assets/Icon002.png
+    - assets/Icon003.png
+    - assets/Icon004.png
+    - assets/Icon005.png
+    - assets/Icon006.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 

@@ -50,7 +50,7 @@ class GetStart extends StatelessWidget {
               ),
               /*** footer ***/
               Container(
-                padding: EdgeInsets.only(bottom: 70.0),
+                padding: EdgeInsets.only(bottom: 50.0),
                 child: Column(
                   children: <Widget>[
                     Container(
