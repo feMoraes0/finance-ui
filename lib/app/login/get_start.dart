@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:finance/app/configs.dart';
 
 class GetStart extends StatelessWidget {
   @override
@@ -9,7 +10,7 @@ class GetStart extends StatelessWidget {
         height: size.height,
         width: size.width,
         decoration: BoxDecoration(
-          color: Color(0xfff1eefc),
+          color: colors["background"]
         ),
         child: SafeArea(
           child: Column(
@@ -57,7 +58,7 @@ class GetStart extends StatelessWidget {
                       margin: EdgeInsets.only(bottom: 30.0),
                       width: size.width - 50.0,
                       decoration: BoxDecoration(
-                        color: Color(0xff7966ff),
+                        color: colors["primary"],
                         borderRadius: BorderRadius.circular(180.0),
                       ),
                       child: Text(
@@ -69,7 +70,7 @@ class GetStart extends StatelessWidget {
                     Container(
                       child: Text(
                         "Login to Account",
-                        style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold, color: Color(0xff7966ff)),
+                        style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold, color: colors["primary"]),
                       ),
                     ),
                   ],
