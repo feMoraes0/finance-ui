@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:finance/app/configs.dart';
 
@@ -88,7 +87,7 @@ class Fingerprint extends StatelessWidget {
                   ),
                 ),
                 onTap: () {
-                  Navigator.pushNamed(context, "verification");
+                  Navigator.pushNamed(context, "last");
                 },
               ),
             ],
