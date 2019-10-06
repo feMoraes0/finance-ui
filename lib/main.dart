@@ -1,4 +1,5 @@
 import 'package:finance/app/login/get_start.dart';
+import 'package:finance/app/login/registration.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -9,7 +10,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(fontFamily: "Avenir Next"),
+      routes: {
+        "get_started": (context) => GetStart(),
+        "registration": (context) => Registration(),
+      },
       home: GetStart(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }

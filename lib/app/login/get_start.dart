@@ -53,19 +53,24 @@ class GetStart extends StatelessWidget {
                 padding: EdgeInsets.only(bottom: 50.0),
                 child: Column(
                   children: <Widget>[
-                    Container(
-                      padding: EdgeInsets.symmetric(vertical: 15.0),
-                      margin: EdgeInsets.only(bottom: 30.0),
-                      width: size.width - 50.0,
-                      decoration: BoxDecoration(
-                        color: colors["primary"],
-                        borderRadius: BorderRadius.circular(180.0),
+                    GestureDetector(
+                      child: Container(
+                        padding: EdgeInsets.symmetric(vertical: 15.0),
+                        margin: EdgeInsets.only(bottom: 30.0),
+                        width: size.width - 50.0,
+                        decoration: BoxDecoration(
+                          color: colors["primary"],
+                          borderRadius: BorderRadius.circular(180.0),
+                        ),
+                        child: Text(
+                          "Create Account",
+                          textAlign: TextAlign.center,
+                          style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold, color: Color(0xffffffff)),
+                        ),
                       ),
-                      child: Text(
-                        "Create Account",
-                        textAlign: TextAlign.center,
-                        style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold, color: Color(0xffffffff)),
-                      ),
+                      onTap: () {
+                        Navigator.pushNamed(context, "registration");
+                      },
                     ),
                     Container(
                       child: Text(
