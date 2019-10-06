@@ -3,6 +3,8 @@ import 'package:finance/app/login/get_start.dart';
 import 'package:finance/app/login/last.dart';
 import 'package:finance/app/login/registration.dart';
 import 'package:finance/app/login/verification.dart';
+import 'package:finance/app/user/home.dart';
+
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -19,6 +21,8 @@ class MyApp extends StatelessWidget {
         "verification": (context) => Verification(),
         "fingerprint":  (context) => Fingerprint(),
         "last": (context) => Last(),
+
+        "home": (context) => Home(),
       },
       home: GetStart(),
       debugShowCheckedModeBanner: false,
