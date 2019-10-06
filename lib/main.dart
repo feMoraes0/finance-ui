@@ -1,5 +1,6 @@
 import 'package:finance/app/login/get_start.dart';
 import 'package:finance/app/login/registration.dart';
+import 'package:finance/app/login/verification.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -13,6 +14,7 @@ class MyApp extends StatelessWidget {
       routes: {
         "get_started": (context) => GetStart(),
         "registration": (context) => Registration(),
+        "verification": (context) => Verification(),
       },
       home: GetStart(),
       debugShowCheckedModeBanner: false,
