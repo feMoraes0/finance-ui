@@ -147,7 +147,7 @@ class Verification extends StatelessWidget {
                         ),
                       ),
                       onTap: () {
-                        Navigator.pushNamed(context, "registration");
+                        Navigator.pushNamed(context, "fingerprint");
                       },
                     ),
                   ],

@@ -1,3 +1,4 @@
+import 'package:finance/app/login/fingerprint.dart';
 import 'package:finance/app/login/get_start.dart';
 import 'package:finance/app/login/registration.dart';
 import 'package:finance/app/login/verification.dart';
@@ -12,9 +13,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(fontFamily: "Avenir Next"),
       routes: {
-        "get_started": (context) => GetStart(),
+        "get_started":  (context) => GetStart(),
         "registration": (context) => Registration(),
         "verification": (context) => Verification(),
+        "fingerprint":  (context) => Fingerprint(),
       },
       home: GetStart(),
       debugShowCheckedModeBanner: false,
