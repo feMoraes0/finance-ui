@@ -14,7 +14,7 @@ class Registration extends StatelessWidget {
           child: Column(
             children: <Widget>[
               Padding(
-                padding: const EdgeInsets.all(20.0),
+                padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 25.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
@@ -66,30 +66,28 @@ class Registration extends StatelessWidget {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: <Widget>[
-                          Icon(Icons.flag, color: Colors.black26,),
-                          Container(
-                            width: size.width - 210,
-                            child: Text("(+62)  8128008011", style: TextStyle( fontSize: 17.0, fontWeight: FontWeight.bold, color: Colors.black87),)
-                            //TextFormField(decoration: InputDecoration(labelText: '(+62) 8128008011', border: InputBorder.none)),
+                          Icon(
+                            Icons.flag,
+                            color: Colors.black26,
                           ),
+                          Container(
+                              width: size.width - 210,
+                              child: Text(
+                                "(+62)  8128008011",
+                                style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.bold, color: Colors.black87),
+                              )
+                              //TextFormField(decoration: InputDecoration(labelText: '(+62) 8128008011', border: InputBorder.none)),
+                              ),
                           Container(
                             padding: EdgeInsets.all(5.0),
                             decoration: BoxDecoration(
                               color: Colors.greenAccent,
                               shape: BoxShape.circle,
                               boxShadow: [
-                                BoxShadow(
-                                  color: Colors.black26,
-                                  blurRadius: 2.0,
-                                  offset: Offset(2.0, 2.0)
-                                ),
+                                BoxShadow(color: Colors.black26, blurRadius: 2.0, offset: Offset(2.0, 2.0)),
                               ],
                             ),
-                            child: Icon(
-                              Icons.check,
-                              color: Colors.white,
-                              size: 16.0,
-                            ),
+                            child: Icon(Icons.check, color: Colors.white, size: 16.0),
                           )
                         ],
                       ),
