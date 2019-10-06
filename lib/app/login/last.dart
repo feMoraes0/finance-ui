@@ -98,8 +98,8 @@ class _LastState extends State<Last> {
                                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16.0),
                                   ),
                                   Container(
-                                    margin: EdgeInsets.only(left: 10.0),
-                                    padding: EdgeInsets.symmetric(vertical: 6.0, horizontal: 12.0),
+                                    margin: EdgeInsets.only(left: 4.0),
+                                    padding: EdgeInsets.symmetric(vertical: 7.0, horizontal: 9.0),
                                     decoration: BoxDecoration(
                                         borderRadius: BorderRadius.circular(180.0),
                                         gradient: LinearGradient(colors: [
@@ -109,6 +109,7 @@ class _LastState extends State<Last> {
                                     child: Text(
                                       "Recommended",
                                       style: TextStyle(
+                                        fontSize: 12.0,
                                         fontWeight: FontWeight.bold,
                                         color: Colors.white,
                                       ),
@@ -128,7 +129,7 @@ class _LastState extends State<Last> {
                     ),
                   ),
                   Container(
-                    padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 30.0),
+                    padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 20.0),
                     margin: EdgeInsets.symmetric(horizontal: 30.0),
                     decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(10.0)),
                     child: Row(
@@ -150,7 +151,7 @@ class _LastState extends State<Last> {
                               padding: const EdgeInsets.only(bottom: 10.0),
                               child: Text(
                                 "Without identify card",
-                                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16.0),
+                                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15.0),
                               ),
                             ),
                             Text("You only can store IDR 1 Million to", style: TextStyle(height: 1.4)),

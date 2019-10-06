@@ -46,7 +46,7 @@ class Fingerprint extends StatelessWidget {
                 ),
               ),
               Container(
-                margin: EdgeInsets.fromLTRB(50.0, 0, 50.0, 45.0),
+                margin: EdgeInsets.fromLTRB(50.0, 0, 50.0, 35.0),
                 child: Text(
                   "To add your fingerprint, lift and rest your finger at home button repeatedly (optional).",
                   textAlign: TextAlign.center,
@@ -54,12 +54,12 @@ class Fingerprint extends StatelessWidget {
                 ),
               ),
               Container(
-                padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 30.0),
+                padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 35.0),
                 decoration: BoxDecoration(color: Colors.white38, borderRadius: BorderRadius.circular(10.0)),
                 child: Icon(Icons.fingerprint, size: 120.0, color: Colors.redAccent,)
               ),
               Container(
-                margin: EdgeInsets.only(top: 50.0),
+                margin: EdgeInsets.only(top: 30.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
@@ -74,7 +74,7 @@ class Fingerprint extends StatelessWidget {
               GestureDetector(
                 child: Container(
                   padding: EdgeInsets.symmetric(vertical: 15.0),
-                  margin: EdgeInsets.only(top: 40.0),
+                  margin: EdgeInsets.only(top: 30.0),
                   width: size.width - 90.0,
                   decoration: BoxDecoration(
                     color: colors["primary"],
