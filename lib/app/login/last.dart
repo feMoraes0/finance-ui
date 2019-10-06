@@ -1,7 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:finance/app/configs.dart';
 
-class Last extends StatelessWidget {
+class Last extends StatefulWidget {
+  @override
+  _LastState createState() => _LastState();
+}
+
+class _LastState extends State<Last> {
+
+  bool popup = false;
+
+  showPopup() {
+    setState(() {
+      this.popup = true;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -162,14 +176,14 @@ class Last extends StatelessWidget {
                       ),
                     ),
                     onTap: () {
-                      Navigator.pushNamed(context, "verification");
+                      this.showPopup();
                     },
                   ),
                 ],
               ),
             ),
           ),
-          Container(
+          (this.popup) ? Container(
             color: Color.fromRGBO(0, 0, 0, 0.7),
             width: size.width,
             height: size.height,
@@ -241,7 +255,7 @@ class Last extends StatelessWidget {
                 ],
               ),
             ),
-          ),
+          ) : Container()
         ],
       ),
     );
