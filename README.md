@@ -31,7 +31,7 @@ $ flutter run
 ```
 
 ## Credits
- - [Design]("https://www.behance.net/gallery/69579243/Finance-Mobile-App-UI-UX")
+ - <a target="_blank" href="https://www.behance.net/gallery/69579243/Finance-Mobile-App-UI-UX">Design</a>
 
 ## Contact
   - <a target="_blank" href="https://www.linkedin.com/in/fernando-moraes-48a26916a/">LinkedIn</a>
